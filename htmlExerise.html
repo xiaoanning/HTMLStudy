@@ -1,0 +1,364 @@
+<html>
+	<head>
+		<title>html学习</title>
+
+		<meta http-equive="content-type",content="text/html;charset=gbk"/>
+
+		<style type = "text/css">
+			
+			#chpTitle
+			{
+				text-align : center ;
+				font-size : 36 ;
+				font-weight : bold ; 
+			}
+			#keyPointTitle
+			{
+				font-weight : bold ;
+			}
+			
+			.markKeyPoint
+			{
+				color : red ;
+				font-weight : bold ;
+			}
+			
+		</style>
+	</head>
+
+
+	</body>
+	<!-- ***************************************	HTML简介 	********************************************************** -->
+		<h1 id = "chpTitle">HTML简介</h1> 
+		
+		
+		<a name = "HTML简介">
+		<a href = "#基本的 HTML 标签"><center>下一节</center></a><p/>
+		
+		<b>实例</b></p>
+		< html><p/>
+			&nbsp &nbsp< body><p/>
+
+				&nbsp &nbsp &nbsp &nbsp< h1>My First Heading< / h1><p/>
+
+				&nbsp &nbsp &nbsp &nbsp< p>My first paragraph.< / p><p/>
+
+			&nbsp&nbsp< /body><p/>
+		< /html><p/>
+
+		<hr />
+		
+		<ol>
+			<!-- ==============    什么是 HTML       =========-->
+			<li id = "keyPointTitle">什么是 HTML？</li><p/>		
+				HTML 是用来描述网页的一种语言。<p/>			
+			<ul>
+				<li>HTML 指的是超文本标记语言 (Hyper Text Markup Language) </li><p/>		
+				<li>HTML 不是一种编程语言，而是一种标记语言 (markup language)</li> <p/>		
+				<li>标记语言是一套标记标签 (markup tag)</li><p/> 
+				<li>HTML 使用标记标签来描述网页 </li><p/>
+			</ul>
+			
+			<hr size = "2px" color = "black" />
+			
+			<!-- ==============    HTML 标签         =========-->
+			<li id = "keyPointTitle">HTML 标签</li><p/>
+			
+			HTML 标记标签通常被称为 HTML 标签 (HTML tag)。<p/>
+
+			<ul>
+				<li>HTML 标签是由尖括号包围的关键词，比如 < html> < /span> </li><p/>
+				<li>HTML 标签通常是成对出现的，比如 < b> 和 < / b> </li><p/>
+				<li>标签对中的第一个标签是开始标签，第二个标签是结束标签 </li><p/>
+				<li>开始和结束标签也被称为开放标签和闭合标签 中间的叫做标签体</li><p/>
+				<li class = "markKeyPoint">有的html元素没有结束标签</li><p/>
+				
+			</ul>
+			
+			<hr size = "2px" color = "black" />
+			
+			<!-- ==============    HTML 文档 = 网页         =========-->
+			<li id = "keyPointTitle">HTML 文档 = 网页</li><p/>
+				<ul>
+					<li>HTML 文档描述网页 </li><p/>
+					<li>HTML 文档包含 HTML 标签和纯文本 </li><p/>
+					<li>HTML 文档也被称为网页 </li><p/>
+				</ul>
+				Web 浏览器的作用是读取 HTML 文档，并以网页的形式显示出它们。浏览器不会显示 HTML 标签，而是使用标签来解释页面的内容：<p/>
+				< html><p/>
+				&nbsp &nbsp< body><p/>
+
+				&nbsp &nbsp &nbsp< h1>My First Heading< /h1><p/>
+
+				&nbsp &nbsp &nbsp< p>My first paragraph.< /p><p/>
+
+				&nbsp &nbsp< /body><p/>
+				
+				< /html><p/>
+				<hr/>
+				
+				<b>例子解释</b><p/>
+				< html> 与 < /html> 之间的文本描述网页 <p/>
+				< body> 与 < /body> 之间的文本是可见的页面内容 <p/>
+				< h1> 与 < /h1> 之间的文本被显示为标题 <p/>
+				< p> 与 < /p> 之间的文本被显示为段落 <p/>
+			<hr size = "2px" color = "black" />
+			
+			<!-- ==============    编辑 HTML          =========-->
+			<li id = "keyPointTitle">编辑 HTML</li><p/>
+			编辑 HTML的工具:<p/>
+			<ul>
+				<li>纯文本编辑器。初学者学习 HTML 的最佳方式。</li><p/>
+				<li>Dreamweaver 或 FrontPage    专业的 web 开发者喜欢的开发工具</li><p/>
+			</ul>
+			
+			<hr size = "2px" color = "black" />
+
+			<li id = "keyPointTitle">.htm 还是 .html 文件后缀</li><p/>
+			当保存 HTML 文件时，既可以使用 .htm 也可以使用 .html 文件后缀。这只是长久以来形成的习惯而已，因为过去的很多软件只允许三个字母的文件后缀。
+
+不过对于新的软件，使用 .html 完全没有问题。<p/>
+
+			
+		</ol>
+		<hr size = "2px" color = "red" />
+		<!-- ***************************************	基本的 HTML 标签 	********************************************************** -->
+
+		<h1 id = "chpTitle">基本的 HTML 标签</h1> </p>
+		
+		<a name = "基本的 HTML 标签">
+		<a href = "#HTML简介"> 上一节</a> &nbsp &nbsp &nbsp <a href = "#HTML元素"> 下一节</a>
+		
+		<ol>
+				<!-- 什么是 HTML 标签 -->
+				
+			<li id = "keyPointTitle"> 什么是 HTML 标签</li><p/>
+			
+			<ul>
+				<li>HTML 文档和 HTML 元素是通过 HTML 标签进行标记的</li><p/>
+				<li>HTML 标签由开始标签和结束标签组成</li><p/>
+				<li>开始标签是被括号包围的元素名</li><p/>
+				<li>结束标签是被括号包围的斜杠和元素名 </li><p/>
+				<li>某些 HTML 元素没有结束标签，比如 < br /></li><p/>
+			</ul>
+			 注释：开始标签的英文翻译是 start tag 或 opening tag，结束标签的英文翻译是 end tag 或 closing tag<p/>
+ 
+			<hr size = "2px" color = "black" />	
+				
+				<!-- HTML 标题 -->
+				
+			<li id = "keyPointTitle"> HTML 标题</li><p/>
+			
+				<p/>HTML 标题（Heading）是通过 < h1> - < h6> 等标签进行定义的。<p/>
+
+				<b>实例:</b><p/>
+				<h1>This is a heading</h1>
+				<h2>This is a heading</h2>
+				<h3>This is a heading</h3>
+
+			<hr size = "2px" color = "black" />	
+			
+			
+				<!-- HTML 段落 -->
+			<li id = "keyPointTitle"> HTML 段落</li>
+			
+			<p/>HTML 段落是通过 < p> 标签进行定义的。<p/>
+
+				<p/><b>实例</b><p/>
+				<p>This is a paragraph.</p>
+				<p>This is another paragraph.</p>
+
+			<hr size = "2px" color = "black" />	
+
+			<!-- HTML 链接 -->
+			<li id = "keyPointTitle"> HTML 链接</li>
+
+			<p/>HTML 链接是通过 < a> 标签进行定义的。<p/>
+
+				<b>实例</b><p/>
+				< a href="http://www.w3school.com.cn">
+					This is a link
+				< / a><p/>
+
+				注释：在 href 属性中指定链接的地址。<p/>
+
+			<hr size = "2px" color = "black" />	
+			
+			
+			<!-- HTML 图像-->
+			<li id = "keyPointTitle"> HTML 图像</li>
+
+			<p/>HTML 图像是通过 < img> 标签进行定义的。<p/>
+
+			实例<p/>
+				<img src="w3school.jpg" width="104" height="142" /><p/>
+
+			注释：图像的名称和尺寸是以属性的形式提供的。<p/>
+
+				
+			
+		</ol>
+			<hr size = "2px" color = "red" />
+			<!-- ***************************************	 HTML 元素 	********************************************************** -->
+			
+			<h1 id = "chpTitle">  HTML 元素</h1>
+			
+			HTML 文档是由 HTML 元素定义的
+			
+			<!-- HTML 元素 -->
+		<ol>
+			<li id = "keyPointTitle"> HTML 元素</li><p/>
+			
+
+			HTML 元素指的是从开始标签（start tag）到结束标签（end tag）的所有代码。<p/>
+			<table border = "1px" cellspacing = "0px" cellpadding = "20px" bordercolor = "red" align = "center" >
+				<tr bgcolor = "blue" align = "center">
+						<td colspan = 3>HTML元素</td>
+				</tr>
+				<tr align = "center">
+						<td>开始标签</td>
+						<td>元素内容</td>
+						<td>  结束标签 </td>
+				</tr>
+				<tr align = "center">
+						<td>< p></td>
+						<td>This is a paragraph</td>
+						<td>< /p></td>
+				</tr>
+				<tr align = "center">
+						<td><- a href="default.htm" ></td>
+						<td>This is a link</td>
+						<td>< /a> </td>
+				</tr>
+				<tr>
+						<td>< br />  </td>
+						<td>  </td>
+						<td>  </td>
+				</tr>
+			</table>
+
+			<p/>注释：开始标签常被称为开放标签（opening tag），结束标签常称为闭合标签（closing tag）。<p/>
+			
+			<hr size = "2px" color = "black" />	
+			
+			<!-- HTML 元素语法 -->
+			<li id = "keyPointTitle"> HTML 元素语法</li><p/>
+				<ul>
+					<li>HTML 元素以开始标签起始 </li><p/>
+					<li>HTML 元素以结束标签终止 </li><p/>
+					<li>元素的内容是开始标签与结束标签之间的内容 </li><p/>
+					<li class = "markKeyPoint">某些 HTML 元素具有空内容（empty content） </li><p/>
+					<li>空元素在开始标签中进行关闭（以开始标签的结束而结束） </li><p/>
+					<li>大多数 HTML 元素可拥有属性 </li><p/>
+				</ul>
+				
+				
+			<hr size = "2px" color = "black" />	
+			
+			<!--嵌套的 HTML 元素-->
+			<li id = "keyPointTitle"> 嵌套的 HTML 元素</li>
+			
+			<p/>大多数 HTML 元素可以嵌套（可以包含其他 HTML 元素）。<p/>
+
+			<p/>HTML 文档由嵌套的 HTML 元素构成。<p/>
+
+			<b>HTML 文档实例</b><p/>
+			
+				< html><p/>
+
+				&nbsp &nbsp < body> <p/>
+				&nbsp &nbsp &nbsp &nbsp < p>This is my first paragraph.</ p><p/>
+				&nbsp &nbsp < / body> <p/>
+
+				< / html> <p/>
+			上面的例子包含三个 HTML 元素。
+			
+			<hr />	
+			
+			<b>HTML 实例解释</b><p/>
+			<b>< p> 元素：</b><p/>
+			< p>This is my first paragraph.</ p>这个 < p> 元素定义了 HTML 文档中的一个段落。<p/>
+
+			这个元素拥有一个开始标签 < p>，以及一个结束标签 </ p>。<p/>
+
+			元素内容是：This is my first paragraph。<p/>
+
+			<b>< body> 元素：</b><p/>
+			< body><p/>
+			&nbsp &nbsp< p>This is my first paragraph.</ p><p/>
+			</ body><p/>
+			< body> 元素定义了 HTML 文档的主体。<p/>
+
+			这个元素拥有一个开始标签 < body>，以及一个结束标签 < / body>。<p/>
+
+			元素内容是另一个 HTML 元素（p 元素）。<p/>
+
+			<b>< html> 元素：</b><p/>
+			< html><p/>
+
+			&nbsp &nbsp< body><p/>
+			&nbsp &nbsp &nbsp &nbsp < p>This is my first paragraph.< / p><p/>
+			&nbsp &nbsp < / body><p/>
+
+			< / html><p/>
+			< html> 元素定义了整个 HTML 文档。<p/>
+
+			这个元素拥有一个开始标签 < html>，以及一个结束标签 < / html>。<p/>
+
+			元素内容是另一个 HTML 元素（body 元素）。<p/>
+			
+			<hr size = "2px" color = "black" />	
+			
+			<!--不要忘记结束标签 -->
+			<li id = "keyPointTitle"> 不要忘记结束标签</li><p/>
+			
+			即使您忘记了使用结束标签，大多数浏览器也会正确地显示 HTML：<p/>
+
+			< p>This is a paragraph				<p/>
+			< p>This is a paragraph				<p/>
+			上面的例子在大多数浏览器中都没问题，但不要依赖这种做法。忘记使用结束标签会产生不可预料的结果或错误。<p/>
+
+			<b><font color = "red">注释：未来的 HTML 版本不允许省略结束标签。</font></b><p/>
+			
+			<hr size = "2px" color = "black" />	
+			<!--空的 HTML 元素 -->
+			<li id = "keyPointTitle"> 空的 HTML 元素</li><p/>
+			
+				没有内容的 HTML 内容被称为空元素。空元素是在开始标签中关闭的。<p/>
+
+				< br /> 就是没有关闭标签的空元素（< br /> 标签定义换行）。<p/>
+
+				在 XHTML、XML 以及未来版本的 HTML 中，所有元素必须被关闭。<p/>
+
+				在开始标签中添加斜杠，比如 < br />，是关闭空元素的正确方法，HTML、XHTML 和 XML 都接受这种方式。<p/>
+
+				即使 < br> 在所有浏览器中都是有效的，但使用 <br /> 其实是更长远的保障。<p/>
+				
+			<hr size = "2px" color = "black" />	
+			<!-- HTML 提示：使用小写标签  -->
+			<li id = "keyPointTitle"> HTML 提示：使用小写标签 </li><p/>
+			
+				HTML 标签对大小写不敏感：< P> 等同于 < p>。许多网站都使用大写的 HTML 标签。<p/>
+
+				W3CSchool 使用的是小写标签，因为万维网联盟（W3C）在 HTML 4 中推荐使用小写，而在未来 (X)HTML 版本中强制使用小写。<p/>
+				
+				
+		</ol>
+
+<hr size = "2px" color = "red" />	
+	<!-- ***************************************	 HTML 属性  	********************************************************** -->
+			
+		<h1 id = "chpTitle">  HTML 属性</h1>
+
+		属性为 HTML 元素提供附加信息<p/>
+
+		<hr size = "2px" color = "black" />	
+
+
+		
+		
+		
+		
+	<body>
+
+</html>
