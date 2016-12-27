@@ -3,19 +3,45 @@
 		<title> Qeestion </title>
 		
 		<meta http-equiv = "content-type" content = "text/html ; charset = "gbk" />
+		
+		<style>
+			#bgcolor
+			{
+				background-color : #d0d0d0; 
+			}
+			#textColor
+			{
+				color : red ;
+			}
+		</style>
+		
 	</head>
 	
 	<body>
 		<ol>
 			<li><b>如何给文字加背景色</b></li><p/>
 				<ul>
-					<li> 文字<small>将文字将入table中 给行td加背景色bgcolor</small></li><p/>
-					<li>?</li><p/>
+					<li> 
+						<table>
+							<tr bgcolor = "#d0d0d0">
+								<td>将文字将入table中 给行td加背景色bgcolor</td>
+							</tr>
+						</table>
+					</li><p/>
+					<li><san style = "background-color:#d0d0d0">使用标签的style属性的background-color</san></li><p/>
+					<li><san id = "bgcolor">使用css</san></li><p/>
 				</ul>
 			
 			<li><b>如何给某个单元格文字加颜色</b></li><p/>
 				<ul>
-					<li><s>AD 可以通过font标签 的color属性设置</s></li><p/>
+					<font color = "red"><li> 可以通过font标签 的color属性设置</li></font><p/>
+					<li style = "color:red"> 使用标签的style属性的color</li><p/>
+					<li id = "textColor"> 使用css</li><p/>
+				</ul>
+				
+			<li><b>如何把外部文件合并进主文件</b></li><p/>
+				<ul>
+					<li> ?</li><p/>
 				</ul>
 		</ol>
 	</body>
