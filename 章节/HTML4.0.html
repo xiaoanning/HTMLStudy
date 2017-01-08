@@ -1,0 +1,68 @@
+<html>
+
+	<body>
+	
+		<pre>
+		
+<b>
+
+1. 为什么要使用css 样式表
+2. html的标准规范  纠正不正确的写法
+3.验证html文件
+</b>
+		
+		
+		
+		
+			HTML 3.2 真的是特别糟糕！
+			最初的 HTML 绝没有打算要包含支持格式化文档的标签。HTML 标签原打算用于定义文档的的内容。
+
+			&lt;p>This is a paragraph&lt;/p>
+
+			&lt;h1>This is a heading&lt;/h1>
+
+			当诸如 &lt;font> 这样的标签和 color 属性被加入 HTML3.2 的规范当中，它开始成为开发者的一场噩梦。
+			那些不得不将字体和文字信息添加到每个单一网页的站点，其开发过程最终变成了漫长、昂贵和极其痛苦的过程。
+			
+			HTML4.0 的优秀特性
+			通过使用 HTML4.0，<b>所有的格式化信息都可以从 HTML 文件中剥离，并植入一个独立的样式表。</b>
+
+			因为 HTML4.0 将文档的表现与其结构分离，我们从而得到了我们一直需要的东西：在不把文档内容搞糟的情况下，对表现层进行完全的控制。
+			我们应该做些什么？
+			<b>停止在 HTML 标签内部使用表现样式属性。</b>
+
+			我们的完整的 HTML 标签参考手册对 HTML4.0 标签和属性进行了简要的说明。
+
+
+			为 XHTML 做好准备
+			<b>XHTML 是新的 HTML</b>。你现在就应该为此做好准备。而您可以做的最重要的事情就是开始编写正确的 HTML4.01 代码。
+			并且<b>使用小写字母编写标签。记得关闭标签</b>。决不要在没有 &lt;/p> 标签的情况下结束一个段落。
+
+			提示：官方的 HTML4.01 标准推荐使用小写的标签。
+
+			<b>验证 HTML文件</b>
+			HTML 文档是根据文档类型声明进行验证的。如果希望 HTML 文件被正确地验证，就要将恰当的 DTD 添加到文件的第一行。
+
+			HTML 4.01 Strict DTD 包含没有被反对使用或者不出现在框架中的元素和属性：
+
+			&lt;!DOCTYPE HTML PUBLIC
+			"-//W3C//DTD HTML 4.01//EN"
+			"http://www.w3.org/TR/html4/strict.dtd">
+			
+			HTML 4.01 Transitional DTD 包含 strict DTD 中所有的内容，外加被反对使用的元素和属性：
+
+			&lt;!DOCTYPE HTML PUBLIC
+			"-//W3C//DTD HTML 4.01 Transitional//EN"
+			"http://www.w3.org/TR/html4/loose.dtd">
+			
+			HTML 4.01 Frameset DTD 包含 transitional DTD 中所有的内容，外加对框架的支持：
+
+			&lt;!DOCTYPE HTML PUBLIC
+			"-//W3C//DTD HTML 4.01 Frameset//EN"
+			"http://www.w3.org/TR/html4/frameset.dtd">
+		
+		</pre>
+	
+	</body>
+
+</html>

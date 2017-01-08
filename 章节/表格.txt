@@ -1,0 +1,81 @@
+
+1.	表格
+2. table的属性和标签
+
+
+
+1.	表格
+
+	表格由 < table> 标签来定义。
+	每个表格均有若干行（由 < tr> 标签定义），每行被分割为若干单元格（由 < td> 标签定义）。
+	字母 td 指表格数据（table data），即数据单元格的内容。
+	数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等等。
+	
+2. table的属性和标签
+	
+	border  			边框宽度
+	bordercolor			边框颜色
+	cellspacing			外边距
+	cellpadding			内边距
+	align				表格的对齐方式 不是文本
+	frame  				控制围绕表格的边框 值有top below box  hsides
+	
+	
+	table td 公共属性 
+	width  weight 		值可以是100% 或 100px   只能设置第一行  
+	style   			可以设置单元格文本对齐方式\背景色
+	background			背景图片
+	
+	<caption> 标题  显示在整个表格的上方
+	<tr>  行
+	<td>  具体单元格  rowspan  colspan属性
+	<th>  表头  嵌套在<tr>标签中
+
+
+< thead>, < tbody> 和 < tfoot>很少被用到，这是由于浏览器对它们的支持不太好。
+希望这种情况在未来版本的 XHTML 中会有所改观。如果你使用 IE5.0 或者更新的版本
+
+
+实例代码
+<table border = "0px" bordercolor = "red"
+	 cellspacing = "0px" cellpadding = "20px" 
+	 align = "center" 
+	 style = "background-color:white;text-align:left" 
+	 width = "50%" height = "50%"
+	 frame = "box">
+	 
+	<caption>标题</caption>
+
+	<tr >
+		<th  background = "E:\005-图片\证书\艺术签名.jpg">这是表头1</th>
+		<th >这是标头2</th>
+		<th>这是标头3</th>
+		
+	</tr>
+	<tr style = "background-color:green;text-align:center">
+		<td >1 1</td>
+		<td></td>
+		<td>&nbsp</td>
+	</tr>
+	<tr>
+		<td colspan = 2 style = "background-color:yello;text-align:center">2 1</td>
+		<td rowspan = 2>2 3</td>
+	</tr>
+	<tr>
+		<td>3 1</td>
+		<td>3 2</td>
+	</tr>
+	<tr>
+		<td>3 1</td>
+		<td>3 2</td>
+		<td>3 2</td>
+		
+	</tr>
+	<tr>
+		<td>3 1</td>
+		<td>3 2</td>
+		<td>3 2</td>
+		
+	</tr>
+</table>
+

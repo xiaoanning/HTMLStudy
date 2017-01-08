@@ -1,0 +1,90 @@
+<html>
+
+	<body>
+<pre>
+form属性  : action 设置要提交数据的地址 
+		 method 设置提交的方式 get post
+name 是提交数据时的字段名   单选框将name设置为一样的 则控制只能选一个
+value 是提交数据时的值
+readonly  设置input不可输入
+
+checked  设置单选 多选的默认值
+selected 设置下拉列表的默认值
+
+
+selected /textarea 是双标签
+
+</pre>
+		
+		Fieldset around data :
+		<fieldset>
+		<legend>表单</legend>
+		<form action = "www.baidu.com" method = "get" enctype = "text/plain">
+			<input type = "hidden">
+			单行文本域:
+			<input type = "text" value = "value11" name = "text field"  maxlength = "5">
+			<p/>
+			多行文本域textarea:
+			<textarea  value = "textarea" rows = "14" cols = "50"></textarea>
+			<p/>
+			密码域:
+			<input type = "password" value = "password" name = "password field" >
+			<p/>
+			
+			<p/>
+			单选按钮（Radio Buttons）  name设为一致的 则控制只能选择一个
+			<input type = "radio" name = "sex" value = "male" > 男
+			<input type = "radio" name = "sex" value = "female" checked = "checked"> 女
+			<p/>
+			
+			复选框（Checkboxes）
+			<input type = "checkbox" name = "c1" value = "c1" checked = "checked" > c1
+			<input type = "checkbox" name = "c2" value = "c2" checked> c2
+
+			<p/>
+			
+			下拉列表
+			<select name = "select">
+			
+				<optgroup label = "11">
+				<option value = "1bushi1" >1</option>
+				<option>2</option>
+				<option selected = "selected">3</option>
+				</optgroup>
+				<optgroup label = "22">
+				<option value = "1bushi1" >1</option>
+				<option>2</option>
+				<option selected = "selected">3</option>
+				</optgroup>
+			</select>
+			<p/>
+			表单的动作属性（Action）和确认按钮
+			<input type = "submit" value = "submit" name = "submit"> 
+			<input type = "reset" name = "reset" value = "reset">
+				<p/>	
+			按钮:
+			<input type = "button" value = "这是按钮">
+			
+		</form>
+		
+<pre>
+
+表单标签
+标签 			描述 
+< form> 	定义供用户输入的表单 
+< input> 定义输入域 
+< textarea> 定义文本域 (一个多行的输入控件) 
+< label> 定义一个控制的标签 
+< fieldset> 定义域 
+< legend> 定义域的标题 
+< select> 定义一个选择列表 
+< optgroup> 定义选项组 
+< option> 定义下拉列表中的选项 
+< button> 定义一个按钮 
+< isindex> 已废弃。有< input>代替。 
+
+</pre>	
+	
+		</fieldset>
+	</body>
+</html>

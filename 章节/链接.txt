@@ -1,0 +1,50 @@
+
+<a href = "ip#锚或者uri" target = "_blank" style = "text-decoration:none">这是a标签的href属性</a>
+	<a name = "定义一个锚"></a>
+	
+1.	锚标签和 href 属性
+2.	Target 属性
+3.	锚标签和 Name 属性
+4.	链接锚
+5.	统一设置target属性
+6. 不带下划线的链接
+
+
+
+
+
+
+
+
+1.	锚标签和 href 属性
+
+	HTML 使用 <a> （锚）标签来创建连接另一个文档的链接。
+
+	锚可以指向网络上的任何资源：一张 HTML 页面，一幅图像，一个声音或视频文件等等。
+	
+	<a> 用来创建锚。
+	href 属性用于定位需要链接的文档，锚的开始标签和结束标签之间的文字被作为超级链接来显示
+
+2.	Target 属性
+
+	使用 Target 属性，可以定义被链接的文档在何处显示 是另开窗口还是在同一个页面   
+	如果把链接的 target 属性设置为 "_blank"，该链接会在新窗口中打开
+
+3.	锚标签和 Name 属性
+	Name 属性用于创建被命名的锚（named anchors）。
+	当使用命名锚（named anchors）时，可以创建直接跳至页面中某个节的链接，这样使用者就无需不停的滚动页面来寻找他们需要的信息。
+
+4.	链接锚
+	链接本文件锚点	#锚	<a href = "#锚">跳到锚</a>
+	链接外部文件锚点 url#锚	<a href="http://www.w3school.com.cn/html/html_links.asp#tips">
+	
+5.	统一设置target属性
+	通过base 标签可以在head里指定所有的链接都在新页面打开 <base target="_blank">
+6. 不带下划线的链接
+	style = "text-decoration:none"
+
+注意:
+	假如浏览器找不到已定义的命名锚，那么就会定位到文档的顶端。不会有错误发生
+
+
+

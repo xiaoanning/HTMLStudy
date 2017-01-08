@@ -1,0 +1,133 @@
+<html>
+
+	<head>
+	
+	<meta name="keywords" content="HTML, DHTML, CSS, XML, XHTML, JavaScript, VBScript">
+	<meta http-equiv ="refresh" content = "1 ;url= meta.html">
+	
+	</head>
+	
+	
+	<body>
+	
+<pre>
+<b>HTML &lt;meta> 标签</b>
+
+<b>定义和用法</b>
+&lt;meta> 元素可提供有关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。
+
+&lt;meta> 标签位于文档的头部，不包含任何内容。&lt;meta> 标签的属性定义了与文档相关联的名称/值对。
+
+<b>HTML 与 XHTML 之间的差异</b>
+在 HTML 中，&lt;meta> 标签没有结束标签。
+
+在 XHTML 中，&lt;meta> 标签必须被正确地关闭。
+
+<b>提示和注释：</b>
+注释：&lt;meta> 标签永远位于 head 元素内部。
+
+注释：元数据总是以名称/值的形式被成对传递的。
+
+
+<b>必需的属性</b>
+
+DTD 指示此属性允许在哪种 DTD 中使用。S=Strict, T=Transitional, F=Frameset.
+
+属性				 值				 描述 									DTD 
+content 	some_text 		定义与 http-equiv 或 name 属性相关的元信息		 STF 
+
+
+<b>可选的属性</b>
+DTD 指示此属性允许在哪种 DTD 中使用。S=Strict, T=Transitional, F=Frameset.
+
+属性				 值 				描述								 DTD 
+http-equiv	 content-type    把 content 属性关联到 HTTP 头部。 			 STF 
+			expires 
+			refresh 
+			set-cookie 
+
+name 			author 			 把 content 属性关联到一个名称。					 STF
+			description 
+			keywords 
+			generator 
+			revised 
+			others 
+ 
+scheme 		some_text 		定义用于翻译 content 属性值的格式。 				STF 
+
+<b>name 属性</b>
+name 属性提供了名称/值对中的名称。<b>HTML 和 XHTML 标签都没有指定任何预先定义的 <meta> 名称。通常情况下，您可以自由使用对自己和源文档的读者来说富有意义的名称。</b>
+
+"keywords" 是一个经常被用到的名称。它为文档定义了一组关键字。某些搜索引擎在遇到这些关键字时，会用这些关键字对文档进行分类。
+
+类似这样的 meta 标签可能对于进入搜索引擎的索引有帮助：
+
+&lt;meta name="keywords" content="HTML,ASP,PHP,SQL"
+
+如果没有提供 name 属性，那么名称/值对中的名称会采用 http-equiv 属性的值。
+
+<b>http-equiv 属性</b>
+http-equiv 属性为名称/值对提供了名称。并指示服务器在发送实际的文档之前先在要传送给浏览器的 MIME 文档头部包含名称/值对。
+
+当服务器向浏览器发送文档时，会先发送许多名称/值对。虽然有些服务器会发送许多这种名称/值对，但是所有服务器都至少要发送一个：content-type:text/html。这将告诉浏览器准备接受一个 HTML 文档。
+
+使用带有 http-equiv 属性的 &lt;meta> 标签时，服务器将把名称/值对添加到发送给浏览器的内容头部。例如，添加：
+
+&lt;meta http-equiv="charset" content="iso-8859-1">
+&lt;meta http-equiv="expires" content="31 Dec 2008">
+这样发送到浏览器的头部就应该包含：
+
+content-type: text/html
+charset:iso-8859-1
+expires:31 Dec 2007
+当然，只有浏览器可以接受这些附加的头部字段，并能以适当的方式使用它们时，这些字段才有意义。
+
+<b>content 属性</b>
+content 属性提供了名称/值对中的值。<b>该值可以是任何有效的字符串。</b>
+
+<b>content 属性始终要和 name 属性或 http-equiv 属性一起使用。</b>
+
+<b>scheme 属性</b>
+scheme 属性用于指定要用来翻译属性值的方案。此方案应该在由 &lt;head> 标签的 profile 属性指定的概况文件中进行了定义。
+
+<b>标准属性</b>
+dir, lang, xml:lang
+
+
+<b>文档描述 </b>
+Meta 元素中的信息可以描述 HTML 文档。  
+本文档的 meta 属性标识了创作者和编辑软件
+&lt;meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+&lt;meta name="author" content="w3school.com.cn">
+
+&lt;meta name="revised" content="David Yang,8/1/07">
+ 
+&lt;meta name="generator" content="Dreamweaver 8.0en">
+
+<b>文档关键字 </b>
+Meta 元素中的信息可以描述文档的关键词。 
+本文档的 meta 属性描述了该文档和它的关键词
+&lt;meta name="description" content="HTML examples">
+
+&lt;meta name="keywords" content="HTML, DHTML, CSS, XML, XHTML, JavaScript, VBScript">
+
+<b>重定向 </b>
+
+&lt;meta http-equiv ="refresh" content = "30 ;url= meta.html">
+
+<b>提示：W3C 声明说：某些用户程序支持使用 META 在设定好的几秒钟后来刷新当前的页面，并将之替换为另一个 url。
+开发人员不应使用此技术强迫用户转到不同的页面，因为这样会使页面的可用性变差。
+相反，应使用服务器端重定向来进行自动页面定向</b>
+
+
+<b>针对搜索引擎的关键字</b>
+某些万维网搜索引擎使用 meta 标签的 name 和 content 属性来索引页面
+然而，由于非常多的网管们使用 meta 标签制造垃圾信息，比方说在页面重复关键词以达到提高排名的目的，一些搜索引擎已经彻底放弃了使用它们
+
+</pre>
+	
+	</body>
+
+
+</html>

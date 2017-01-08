@@ -1,0 +1,56 @@
+<html>
+	<!-- 
+	
+		h5中不再支持这个标签及相关标签
+	
+		<pre>
+			 水平框架设置rows 属性
+		
+			noresize  设置边框不能被拖动 设定值是固定的 不能是百分比
+			
+			
+			
+			
+			为不支持框架的浏览器添加 < noframes> 标签。
+	
+			重要提示：不能将 &lt;body>&lt;/body> 标签与 &lt;frameset>&lt;/frameset> 标签同时使用！不过，假如你添加包含一段文本的 &lt;noframes> 标签，就必须将这段文字嵌套于 &lt;body>&lt;/body> 标签内
+			
+		
+		 </pre>
+		 
+		 <pre>
+				
+				导航框架
+				
+				显示框架内的一个指定的节 
+		</pre> 
+	 -->
+	<frameset cols = "* , 75%",rows = "200,200">
+	
+		<frame src = "F:\HTMLStudy\框架1.html"  noresize="noresize">
+	
+		<frame src = "F:\HTMLStudy\框架3.html">
+		
+		
+		<noframes>
+			<body>您的浏览器无法处理框架！</body>
+		</noframes>
+		
+	</frameset> 
+	
+	
+<!-- 
+	<body>
+			<pre>
+			内联框架  在同一个文件中不能和其他框架同时使用  但可以引入其他文件和其他框架引入
+			
+			
+			指向文件某一个锚 用 文件地址#锚名字
+			
+			</pre> 
+			 
+			 
+			 <iframe src = "C:/Users/ning/Desktop/1.html" ></iframe>
+	</body>
+ -->
+</html>

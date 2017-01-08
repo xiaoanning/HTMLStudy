@@ -1,0 +1,54 @@
+<pre>
+	1.支持javascript   script 标签
+	2.不支持javascript noscript标签  或者是注释
+</pre>
+
+
+<html>
+
+	<head>
+	
+		<meta http-equiv = "refresh" content = "1  ; url = 脚本.html" />
+	</head>
+	
+	<body>
+		<script type = "text/javascript">
+			
+			<!--
+			document.write("脚本")
+			//-->;
+		
+		</script>
+		
+		<noscript> no javascript support
+		
+		
+		
+		
+</object>
+		
+		</noscript>
+
+
+	</body>
+	
+<pre>
+<b>如何应付老式的浏览器</b>
+如果浏览器压根没法识别 &lt;script> 标签，那么 &lt;script> 标签所包含的内容将以文本方式显示在页面上。
+为了避免这种情况发生，你应该将脚本隐藏在注释标签当中。
+那些老的浏览器（无法识别 &lt;script> 标签的浏览器）将忽略这些注释，所以不会将标签的内容显示到页面上。
+而那些新的浏览器将读懂这些脚本并执行它们，即使代码被嵌套在注释标签内。
+
+
+<b>&lt;noscript> 标签</b>
+除了将脚本隐藏于注释中，你还可以添加 &lt;noscript> 标签。
+&lt;noscript> 标签用于定义假如脚本没有执行时的替代文本。
+这个标签被用于以下情况：如果浏览器能够识别 &lt;script> 标签，但是不支持其中的脚本，那么这些浏览器将显示出 &lt;noscript> 标签内部的文本。
+不过，如果浏览器支持 &lt;script> 内的脚本，那么浏览器将忽略 &lt;noscript> 标签
+
+
+
+</pre>	
+
+
+</html>

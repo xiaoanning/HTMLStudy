@@ -1,0 +1,75 @@
+<html>
+
+	<head>
+		<meta http-equiv = "refresh" content = "3 ; url = 事件属性.html"/>
+	</head>
+
+	<body>
+	
+		<a href = "www.baidu.com" onmouseover = "alert(提示);return false">百度事件</a>
+	
+<pre>
+HTML 4 的新特性之一是可以使 HTML 事件触发浏览器中的行为，比方说当用户点击某个 HTML 元素时启动一段 JavaScript。
+
+在现代浏览器中都内置有大量的事件处理器。这些处理器会监视特定的条件或用户行为，例如鼠标单击或浏览器窗口中完成加载某个图像。通过使用客户端的 JavaScript，可以将某些特定的事件处理器作为属性添加给特定的标签，并可以在事件发生时执行一个或多个 JavaScript 命令或函数。
+
+事件处理器的值是一个或一系列以分号隔开的 Javascript 表达式、方法和函数调用，并用引号引起来。当事件发生时，浏览器会执行这些代码。例如，当您把鼠标移动到一个超链接时，会启动一个 JavaScript 函数。支持 JavaScript 的浏览器支持 <a> 标签中的一个特殊的 "mouse over"事件处理器 - 被称为 onmouseover 来完成这项工作：
+
+&lt;a href="/index.html" onmouseover="alert('Welcome');return false">&lt;/a>如需学习更多有关事件编程方面的知识，请访问 W3School 提供的 JavaScript 教程 和 DHTML 教程。
+
+下面的表格提供了标准的事件属性，可以把它们插入 HTML/XHTML 元素中，以定义事件行为。
+
+<b>窗口事件 (Window Events)</b>
+仅在 body 和 frameset 元素中有效。
+
+属性 			值					 描述 
+onload 		脚本				 当文档载入时执行脚本 
+onunload 	脚本 				当文档卸载时执行脚本 
+
+
+
+<b>表单元素事件 (Form Element Events)</b>
+仅在表单元素中有效。
+
+属性			 值 			描述 
+onchange 	脚本			 当元素改变时执行脚本 
+onsubmit 	脚本 			当表单被提交时执行脚本 
+onreset 	脚本 			当表单被重置时执行脚本 
+onselect 	脚本 			当元素被选取时执行脚本 
+onblur 		脚本 			当元素失去焦点时执行脚本 
+onfocus 	脚本 			当元素获得焦点时执行脚本 
+
+
+<b>图像事件 (Image Events)</b>
+该属性可用于 img 元素：
+
+属性 			值 			描述 
+onabort 	脚本 			当图像加载中断时执行脚本 
+
+
+<b>键盘事件 (Keyboard Events)</b>
+在下列元素中无效：base, bdo, br, frame, frameset, head, html, iframe, meta, param, script, style, 以及 title 元素。
+
+属性 			值 				描述 
+onkeydown 	脚本 				当键盘被按下时执行脚本 
+onkeypress	 脚本 				当键盘被按下后又松开时执行脚本 
+onkeyup 	脚本				 当键盘被松开时执行脚本 
+
+
+<b>鼠标事件 (Mouse Events)</b>
+在下列元素中无效：base, bdo, br, frame, frameset, head, html, iframe, meta, param, script, style, title 元素。
+
+属性			 值 			描述 
+onclick 	脚本 			当鼠标被单击时执行脚本 
+ondblclick 	脚本 			当鼠标被双击时执行脚本 
+onmousedown 脚本 			当鼠标按钮被按下时执行脚本 
+onmousemove 脚本			 当鼠标指针移动时执行脚本 
+onmouseout 脚本			 当鼠标指针移出某元素时执行脚本 
+onmouseover 脚本			 当鼠标指针悬停于某元素之上时执行脚本 
+onmouseup 脚本			 当鼠标按钮被松开时执行脚本 
+
+</pre>
+		
+	</body>
+
+</html>

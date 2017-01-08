@@ -1,0 +1,71 @@
+<pre>
+1.头元素内的合法标签
+	title
+	meta
+	style
+	script
+	base
+	link
+</pre>
+
+
+<html>
+	
+	<head>
+	
+		<meta http-equiv="refresh" content="1">
+	
+	</head>
+
+	<body>
+	
+	
+<pre>
+
+1.HTML 头部 的特点
+
+	头元素内部的标题信息不会显示在浏览器窗口中
+	
+2.头元素
+
+	头元素包含关于文档的概要信息，也称为元信息（meta-information）。Meta 意为“关于某方面的信息”。
+
+	可以这么说，元数据（meta-data）是关于数据的信息，而元信息是关于信息的信息
+
+3.头元素内的信息
+
+	头元素内的元素不会被浏览器显示出来。
+
+	根据 HTML 标准，仅有几个标签在 HTML 的头部分是合法的。它们是：&lt;base>, &lt;link>, &lt;meta>, &lt;title>, &lt;style> 和 &lt;script>。
+
+	这是一个不合法的结构：
+
+	&lt;head>
+	  &lt;p>This is some text&lt;/p>
+	&lt;/head>
+	在这个案例中，浏览器有两种选择：
+
+	显示文本，因为它在段落元素中。 
+	隐藏文本，因为它在头元素中。 
+	假如你将 &lt;h1> 或者 &lt;p> 之类的 HTML 元素像这样置于头元素之中，大多数浏览器都会显示它，即使这是非法的。
+	
+	
+	
+	Head 标签
+标签		 描述 
+&lt;head> 定义关于文档的信息。 
+&lt;title> 定义文档标题。 
+&lt;base> 定义页面中所有链接的基准 URL。 
+&lt;link> 定义资源引用。 
+&lt;meta> 定义元信息。 
+标签					 描述 
+&lt;!DOCTYPE> 定义文档类型。此标签须位于 html 标签之前。 
+	
+
+</pre>
+	
+	
+	</body>
+
+
+</html>
